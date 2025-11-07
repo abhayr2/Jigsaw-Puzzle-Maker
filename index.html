@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigsaw Puzzle Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <h1>Jigsaw Puzzle Maker</h1>
+        <div id="controls">
+            <div class="control-group">
+                <label for="image-upload">1. Upload Image:</label>
+                <input type="file" id="image-upload" accept="image/*">
+            </div>
+            <div class="control-group">
+                <label for="difficulty">2. Select Difficulty:</label>
+                <select id="difficulty">
+                    <option value="5">Very Easy (5 Pieces)</option>
+                    <option value="20">Easy (20 Pieces)</option>
+                    <option value="40">Medium (40 Pieces)</option>
+                    <option value="80">Hard (80 Pieces)</option>
+                    <option value="100">Expert (100 Pieces)</option>
+                </select>
+            </div>
+            <button id="start-btn">3. Create Puzzle</button>
+        </div>
+
+        <div id="game-area">
+            <div id="puzzle-board"></div>
+            <div id="pieces-container"></div>
+        </div>
+        
+        <div id="preview-area" class="hidden">
+             <h3>Image Preview</h3>
+             <img id="image-preview" src="#" alt="Your uploaded image" />
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
